@@ -2,13 +2,14 @@ import Image from 'next/image'
 import styles from './page.module.css'
 import React from "react";
 import { Header } from "@/app/header/header";
+import {Footer} from "@/app/footer/footer";
 
 export default function Home() {
   return (
     <main className={styles.main}>
         <Header />
 
-        <div className={styles.content}>
+        <div className={styles.container}>
             <Image
                 className={styles.image}
                 src="/felana.jpg"
@@ -41,6 +42,7 @@ export default function Home() {
             </div>
         </div>
 
+        <Footer/>
 
     </main>
   )
