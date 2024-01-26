@@ -1,17 +1,19 @@
 import styles from './header.module.css'
 import React from "react";
-import Button from "@/components/buttons/button";
+import Menu from "@/components/menu/menu";
 
 export default function Header() {
     return (
-       <div className={styles.header}>
-           <h1>Felana LETRANGE</h1>
+        <div className={styles.container}>
 
-           <div className={styles.menu}>
-               <Button />
-               <Button />
-               <Button />
-           </div>
-       </div>
+                <h1>Felana LETRANGE</h1>
+
+                <div className={styles.header__menu}>
+                    <Menu/>
+                </div>
+
+        </div>
+
+
     )
 }

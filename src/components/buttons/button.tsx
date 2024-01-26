@@ -1,10 +1,14 @@
+import React from "react"
 import styles from './button.module.css'
-import React from "react";
 
-export default function Button() {
+interface Props {
+    text: string
+}
+
+export const Button: React.FC<Props> = ({ text }) => {
     return (
         <div className={styles.button}>
-            bouton
+            { text }
         </div>
     )
 }
