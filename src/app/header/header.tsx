@@ -1,8 +1,8 @@
 import styles from './header.module.css'
 import React from "react";
-import Menu from "@/components/menu/menu";
+import { Menu } from "@/components/menu/menu";
 
-export default function Header() {
+export const Header: React.FC = () => {
     return (
         <div className={styles.container}>
 

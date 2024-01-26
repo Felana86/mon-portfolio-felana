@@ -2,7 +2,7 @@ import styles from './menu.module.css'
 import React from "react";
 import { Button } from "@/components/buttons/button";
 
-export default function Menu() {
+export const Menu: React.FC = () => {
     return (
         <div className={styles.container}>
             <Button text={"Blog"}/>
